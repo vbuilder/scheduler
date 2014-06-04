@@ -1,0 +1,6 @@
+._*
+.DS_Store
+/vendor/
+
+# Please note that ** literal is supported only in Git >= 1.8.2
+/tests/**/output/
