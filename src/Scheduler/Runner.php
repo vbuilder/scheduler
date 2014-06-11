@@ -30,6 +30,8 @@ use vBuilder,
 /**
  * Job runner
  *
+ * @package vBuilder.Utils
+ *
  * @author Adam Staněk (velbloud)
  * @since May 25, 2014
  */

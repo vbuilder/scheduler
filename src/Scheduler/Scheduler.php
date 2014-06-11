@@ -42,6 +42,8 @@ use vBuilder,
  * $scheduler->schedule('myJob2', 'MyClass::staticMethod', 1, 2, 3)
  * </code>
  *
+ * @package vBuilder.Utils
+ *
  * @author Adam Staněk (velbloud)
  * @since May 25, 2014
  */
@@ -63,7 +65,11 @@ class Scheduler extends Nette\Object {
 	 *
 	 * @param string
 	 * @param string callable
+	 *
 	 * @return string path to job script
+	 *
+	 * @throws Nette\InvalidArgumentException if invalid argument received
+	 * @throws Nette\InvalidStateException if scheduling failed
 	 */
 	public function schedule($name, $callable, $arg1 = NULL) {
 
